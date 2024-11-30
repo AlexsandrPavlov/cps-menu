@@ -1,5 +1,9 @@
 @import url(./fonts.css);
 
+.page-container{
+    height: 100%;
+    width: 100%;
+}
 .menu {
     display: flex;
     flex-direction: column;
@@ -12,15 +16,8 @@
     font-family: TT lakes;
     line-height: 24px;
     color: black;
-    height: 100%;
-    
-}
-
-
-.container {
-    width: 272px;
-    height: 100%;
-    margin: 0 24px;
+    min-height: 676px;
+    padding: 0 24px;
 }
 
 /* HEADER */
@@ -91,16 +88,16 @@
 .nav-list:first-of-type {
     margin-top: 53px;
 }
-.nav-list__item:last-of-type {
-    margin-bottom: 268px;
+.menu__body{
+    position: relative;
 }
 
 /* FOOTER */
 
 .menu__footer{
     position: absolute;
-    bottom: 0;
-    left: 5; 
+    bottom: 10px;
+    left: 24px; 
     width: 100%; 
 }
 
@@ -170,4 +167,8 @@
 .langs__item:last-of-type {
     margin: 0;
 }
-
+@media (min-width: 768px){
+    .menu{
+        height: 100%;
+    }
+}
